@@ -4,7 +4,7 @@ import { GlobalStyles } from "./components/styles/Global";
 
 // Components
 import Navbar from "./components/Navbar";
-import Carousel from "./components/Carousel";
+import MyCarousel from "./components/Carousel";
 
 function App() {
   const theme = {
@@ -27,7 +27,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Navbar />
-      <Carousel />
+      <MyCarousel />
     </ThemeProvider>
   );
 }

@@ -24,9 +24,11 @@ export const StyledCarousel = styled.div`
 
       position: absolute;
       left: 0;
-      transform: rotate(180deg);
+      z-index: 9;
 
       margin-left: 10px;
+
+      cursor: pointer;
     }
 
     .arrow-right {
@@ -41,7 +43,10 @@ export const StyledCarousel = styled.div`
 
       position: absolute;
       right: 0;
+
       margin-right: 10px;
+
+      cursor: pointer;
     }
   }
 `;

@@ -4,6 +4,7 @@ import { GlobalStyles } from "./components/styles/Global";
 
 // Components
 import Navbar from "./components/Navbar";
+import Carousel from "./components/Carousel";
 
 function App() {
   const theme = {
@@ -14,7 +15,7 @@ function App() {
       darkGrayBlue: "hsl(219, 9%, 45%)",
       grayBlue: "hsl(220, 14%, 75%)",
       lightGrayBlue: "hsl(223, 64%, 98%)",
-      white: "hsl(0,0,100%)",
+      white: "hsl(0,0%,100%)",
       black: "hsl(0, 0%, 0%)",
     },
     dimensions: {
@@ -26,6 +27,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Navbar />
+      <Carousel />
     </ThemeProvider>
   );
 }

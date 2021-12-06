@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 60px;
   }
 `;

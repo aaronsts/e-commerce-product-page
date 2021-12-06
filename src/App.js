@@ -5,11 +5,13 @@ import { GlobalStyles } from "./components/styles/Global";
 // Components
 import Navbar from "./components/Navbar";
 import MyCarousel from "./components/Carousel";
+import ProductInfo from "./components/ProductInfo";
 
 function App() {
   const theme = {
     colors: {
       orange: "hsl(26, 100%, 55%)",
+      orangeFaded: "hsla(26, 100%, 55%, 0.4)",
       paleOrange: "hsl(25, 100%, 94%)",
       darkBlue: "hsl(220, 13%, 13%)",
       darkGrayBlue: "hsl(219, 9%, 45%)",
@@ -28,6 +30,7 @@ function App() {
       <GlobalStyles />
       <Navbar />
       <MyCarousel />
+      <ProductInfo />
     </ThemeProvider>
   );
 }

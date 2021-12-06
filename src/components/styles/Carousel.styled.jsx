@@ -26,7 +26,7 @@ export const StyledCarousel = styled.div`
       left: 0;
       z-index: 9;
 
-      margin-left: 10px;
+      margin-left: 20px;
 
       cursor: pointer;
     }
@@ -44,7 +44,7 @@ export const StyledCarousel = styled.div`
       position: absolute;
       right: 0;
 
-      margin-right: 10px;
+      margin-right: 20px;
 
       cursor: pointer;
     }

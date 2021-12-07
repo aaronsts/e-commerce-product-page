@@ -16,6 +16,10 @@ export const StyledNav = styled.div`
     }
   }
 
+  img {
+    cursor: pointer;
+  }
+
   .avatar {
     width: 30px;
     margin-right: 0px;

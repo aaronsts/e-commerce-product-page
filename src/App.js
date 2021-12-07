@@ -6,6 +6,10 @@ import { GlobalStyles } from "./components/styles/Global";
 import Navbar from "./components/Navbar";
 import MyCarousel from "./components/Carousel";
 import ProductInfo from "./components/ProductInfo";
+import Menu from "./components/Menu";
+
+// React
+import { useState } from "react";
 
 function App() {
   const theme = {
@@ -25,12 +29,18 @@ function App() {
       desktop: "1440px",
     },
   };
+
+  const [showNav, setShowNav] = useState(false);
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Navbar />
-      <MyCarousel />
-      <ProductInfo />
+      <Menu showNav={showNav} setShowNav={setShowNav} />
+      <Navbar setShowNav={setShowNav} />
+      <div>
+        <MyCarousel />
+        <ProductInfo />
+      </div>
     </ThemeProvider>
   );
 }

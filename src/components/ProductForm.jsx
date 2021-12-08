@@ -4,6 +4,7 @@ import { StyledProductForm } from "./styles/ProductForm.styled";
 import { AiOutlineMinus } from "react-icons/ai";
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { StyledButton } from "./styles/Button.styled";
 
 const ProductForm = () => {
   return (
@@ -13,10 +14,10 @@ const ProductForm = () => {
         3
         <AiOutlinePlus className="icons" />
       </div>
-      <button>
+      <StyledButton>
         <AiOutlineShoppingCart />
         Add to Card
-      </button>
+      </StyledButton>
     </StyledProductForm>
   );
 };

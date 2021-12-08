@@ -30,7 +30,7 @@ export const StyledMenu = styled.div`
 
   .black-overlay {
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.6;
     width: 30%;
   }
 
